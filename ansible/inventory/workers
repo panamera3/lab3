@@ -1,12 +1,12 @@
 [ansible_master]
-task2-ansible-1
+task2-ansible-1 ansible_connection=docker
 
 [database]
-task2-app-3
+task2-app-3 ansible_connection=docker
 
 [application]
-task2-app-1
-task2-app-2
+task2-app-1 ansible_connection=docker
+task2-app-2 ansible_connection=docker
 
 [webapp:children]
 database
